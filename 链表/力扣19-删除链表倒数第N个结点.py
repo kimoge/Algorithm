@@ -20,11 +20,12 @@ head_virtual.next = head_link
 
 fast = head_link
 low = head_link
-while n > 0:
+# 多走一步
+while n >= 0:
     fast = fast.next
     n -= 1
 
-while fast.next:
+while fast:
     fast = fast.next
     low = low.next
 

@@ -11,7 +11,7 @@ class Solution:
         # 直接加入当前节点值
         path.append(root.val)
 
-        # 当前节点为叶子结点时：收集路径
+        # 当前节点为叶子结点时（当前节点不为空，左右节点为空）：收集路径
         if not root.left and not root.right:
             path = list(map(str, path))
             res.append("->".join(path))

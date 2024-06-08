@@ -9,7 +9,7 @@ class Solution:
         return self.recur(inorder, postorder)
 
     def recur(self, inorder, postorder):
-        if not postorder or not inorder:
+        if not inorder:
             return None
 
         root_val = postorder.pop()

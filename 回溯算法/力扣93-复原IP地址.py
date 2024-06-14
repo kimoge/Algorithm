@@ -12,11 +12,13 @@ class Solution:
             res.append(".".join(path))
             return
 
-        for i in range(startindex, len(s)+1):
+        for i in range(startindex + 1, len(s)+1):
             if self.isValue(s, startindex, i):
                 path.append(s[startindex:i])
                 self.backtracking(s, i, level + 1, path, res)
                 path.pop()
+            else:
+                break
 
     def isValue(self, s, start, end):
         try:

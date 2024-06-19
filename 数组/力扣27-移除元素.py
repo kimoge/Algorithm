@@ -1,5 +1,5 @@
 # 双指针（快慢指针）删除元素
-nums = [0, 1, 2, 2, 3 , 0, 4, 2]
+nums = [0, 1, 2, 2, 3, 0, 4, 2]
 val = 2
 
 fast = 0
@@ -14,4 +14,3 @@ while fast < len(nums):
     fast += 1
 
 print(nums, low)
-

@@ -1,10 +1,11 @@
-# 贪心思路，每次都往最远的跳（即scope范围更新一次就跳一次）
 nums = [2,3,1,1,4]
 
 if len(nums) == 1:
      print(0)
 
+# 当前可以跳的最大范围
 cur_scope = 0
+# 下一步数后可以跳的最大范围
 next_scope = 0
 i = 0
 times = 0

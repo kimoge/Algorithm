@@ -1,4 +1,3 @@
-# 思路：找到水的一格向外搜索陆地
 from collections import deque
 
 n, m = map(int, input().split())

@@ -19,7 +19,7 @@ def find(u):
     if u == father[u]:
         return u
     else:
-        father[u] = find(u)  # 路径压缩
+        father[u] = find(father[u])  # 路径压缩
         return father[u]
 
 

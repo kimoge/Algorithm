@@ -1,5 +1,6 @@
 # 求最短路径 + 路径权值出现负数时 使用Bellman-ford队列优化算法（即SPFA算法）
 # 与Bellman-ford相比，SPFA使用队列记录上一次松弛的节点，以便更新与其相邻的边的路径值
+# 时间复杂度 n*k（k属于1~e）
 from collections import deque
 
 n, m = map(int, input().split())

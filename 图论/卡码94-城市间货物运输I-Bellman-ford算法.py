@@ -1,5 +1,5 @@
 # 求最短路径 + 路径权值出现负数时 使用Bellman-ford算法
-
+# 时间复杂度 n*e
 n, m = map(int, input().split())
 max_int = 101
 # 将所有边和权值保存即可
